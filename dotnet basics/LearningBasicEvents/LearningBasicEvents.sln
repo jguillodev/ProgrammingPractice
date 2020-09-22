@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningBasicEvents", "LearningBasicEvents.csproj", "{6295796B-EB07-474D-89E5-2C8215C2BA6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6295796B-EB07-474D-89E5-2C8215C2BA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6295796B-EB07-474D-89E5-2C8215C2BA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6295796B-EB07-474D-89E5-2C8215C2BA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6295796B-EB07-474D-89E5-2C8215C2BA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84BB7D9D-A5DA-4151-8D0F-21150C441D1B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningConcurrentDictionary", "LearningConcurrentDictionary.csproj", "{8891A3BA-E23B-4EAC-B46F-59C893C588EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8891A3BA-E23B-4EAC-B46F-59C893C588EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8891A3BA-E23B-4EAC-B46F-59C893C588EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8891A3BA-E23B-4EAC-B46F-59C893C588EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8891A3BA-E23B-4EAC-B46F-59C893C588EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69D420C8-3659-4AE7-9EC3-99D440ED60B0}
+	EndGlobalSection
+EndGlobal
