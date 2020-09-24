@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningEvents.TestingEvents;
+using System;
 
 namespace LearningEvents
 {
@@ -89,14 +90,19 @@ namespace LearningEvents
     {
         static void Main(string[] args)
         {
-            B b = new B();
-            A a = new A(b);
-            MyEventArgs e1 = new MyEventArgs();
-            MyEventArgs e2 = new MyEventArgs();
-            e1.m_id = "Now Tune into DJ TrashCrash";
-            e2.m_id = "Now Tune into DJ OnYourLeft";
-            b.FireEvent1(e1);
-            b.FireEvent2(e2);
+            Publisher publisher = new Publisher();
+            Subscriber subscriber = new Subscriber(publisher);
+            publisher.PublishEvents();
+   
+
+            //B b = new B();
+            //A a = new A(b);
+            //MyEventArgs e1 = new MyEventArgs();
+            //MyEventArgs e2 = new MyEventArgs();
+            //e1.m_id = "Now Tune into DJ TrashCrash";
+            //e2.m_id = "Now Tune into DJ OnYourLeft";
+            //b.FireEvent1(e1);
+            //b.FireEvent2(e2);
 
 
             //MyClass2 c2 = new MyClass2();
