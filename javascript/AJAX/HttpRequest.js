@@ -22,16 +22,20 @@ function transferFailed(){}
 function transferCanceled(){}
 function transferComplete(){}
 
-function loadPokemon()
+function loadPokemon(PokemonName)
 {
   let xhttp = new XMLHttpRequest();
   // xhttp.addEventListener('load',reqListener)
-  xhttp.open('GET','https://pokeapi.co/api/v2/pokemon/butterfree/',true);
-  if(this.readyState == 4 && this.status == 200)
+  xhttp.onreadystatechange = function()
   {
-    console.log(this.responseJSON)
-  }
+    if(this.readyState == 4 && this.status == 200)
+    {
+      let pokemon = this.responseText;
+      console.log(pokemon);
+    }
+  } 
+  xhttp.open('GET','https://pokeapi.co/api/v2/pokemon/'+ PokemonName +'/',true);
   xhttp.send();
 };
 
-loadPokemon();
+loadPokemon('butterfree');
