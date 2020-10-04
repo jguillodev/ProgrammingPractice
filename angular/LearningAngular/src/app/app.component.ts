@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,35 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LearningAngular';
-
-  data:number =100;
+  public val: string="";
+  public newVal: string="This is alert popup message";
+  public value1: number = 10;
+  public array1: Array<number> = [10,22,14];
+  public dt1: Date = new Date();
+  public status: boolean = true;
+  data: number = 100;
   constructor()
   {
     console.log(`new - data is${this.data}` );
   }
 
+  public returnString():string
+  {
+    return "String return from function";
+  }
+
+  public showAlert() : void 
+  {
+    console.log('You clicked on the button...');
+    alert("Click Event Fired...");
+  }
+
+  public onSignUp(data:any):void
+  {
+    let strMessage:string = "Thanks for Signup " + data.name + ".";
+    strMessage += "Email id" + data.email + "has been registered successfully.";
+    alert(strMessage);
+  }
   ngOnChanges()
   {
     console.log(`ngOnChanges - data is ${this.data}`);
