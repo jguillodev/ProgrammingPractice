@@ -5,6 +5,16 @@
   Use of <b>External HTML</b> files with the Component
 </p>
 
+<div>
+  <h3>This is a Attribute Directives</h3>
+  <span [class.red]="true">Attribute Change</span><br/>
+  <span [ngClass]="{blue:true}">Attribute Change by Using NgStyle</span><br>
+  <span [ngStyle]="{'font-size':'14px','color':'green'}"></span>
+  <span [class.cyan]="showColor">Attribute Change</span><br>
+  <span [ngClass]="{'brown':'showColor'}">Attribute Change by Using NgClass</span><br>
+  <input type="button" value="Change Color" (click)="changeColor()"/> <br>
+
+</div>
 <span class='setup'>Given Number</span>
 <h1 class="punchline" >{{data}}</h1>
 

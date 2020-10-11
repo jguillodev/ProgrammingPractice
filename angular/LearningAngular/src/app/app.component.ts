@@ -18,11 +18,16 @@ export class AppComponent {
   public dt1: Date = new Date();
   public status: boolean = true;
   data: number = 100;
+  showColor: boolean = false;
+
   constructor()
   {
     console.log(`new - data is${this.data}` );
   }
-
+  public changeColor(): void 
+  {
+    this.showColor = !this.showColor;
+  }
   public returnString():string
   {
     return "String return from function";
